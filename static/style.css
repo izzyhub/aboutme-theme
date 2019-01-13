@@ -1,20 +1,21 @@
 body {
-  background: rgb(230, 225, 205);
   background: #353238;
-  color: #1E1F2E;
-  color: #353238;
+  color: #F3F3EE;
 
   font-family: Helvetica;
   padding: 0.5vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-items: center;
+  align-items: center;
+
+  justify-content: center;
+  align-content: center;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  align-content: center;
-  align-items: center;
 }
 
 h1 {
@@ -29,6 +30,7 @@ h1 {
   padding: 30px;
 
   background: #F3F3EE;
+  color: #353238;
 
   border-radius: 30px;
   max-width: 370px;
@@ -81,4 +83,20 @@ a {
 
 a:hover {
   transform: scale(1.2);
+}
+
+footer {
+  color: #F3F3EE;
+
+  align-self: center;
+  justify-self: flex-end;
+}
+
+
+footer a:visited {
+  color: #8E75AD;
+}
+
+footer a:link {
+  color: #7AAA91;
 }

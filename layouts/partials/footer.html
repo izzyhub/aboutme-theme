@@ -1,3 +1,14 @@
+{{  if not .Site.Params.hideFooter }}
 <footer>
-  {{ .Site.Params.footerText | markdownify }}
+  Made with
+  <a href="https://gohugo.io/">Hugo</a>
+  using the
+  <a href="https://github.com/izzyhub/aboutme-theme">
+    About me theme
+  </a>
+
+  by <a href="https://izzyhub.com">Izzy</a>.
+
 </footer>
+{{ end }}
+
