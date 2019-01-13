@@ -1,0 +1,11 @@
+baseURL = "https://example.com"
+languageCode = "en-us"
+title = "About Mew"
+theme = "aboutme"
+
+[params]
+  email = "mail@example.com"
+  github = "https://github.com"
+  twitter = "topnapexpert"
+  linkedin = "https://www.linkedin.com"
+  location = "Under the truck near the SS Anne"
