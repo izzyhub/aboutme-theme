@@ -4,7 +4,7 @@
 Follow the official [hugo instructions](https://gohugo.io/themes/installing-and-using-themes/)
 to install the theme.
 
-Which go something like this:
+Which goes something like this:
 
 ```bash
 git submodule add https://github.com/izzyhub/aboutme-theme.git themes/aboutme
