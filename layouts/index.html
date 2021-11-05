@@ -5,35 +5,33 @@
     <title>{{.Title}}</title>
   </head>
   <body>
-    <main>
-      <div class="content">
-        <h1>{{.Title}}</h1>
-        {{ with .Site.Params.location }}
-          <div class="location">{{.}}</div>
+    <main class="content">
+      <h1>{{.Title}}</h1>
+      {{ with .Site.Params.location }}
+      <div class="location">{{.}}</div>
+      {{ end }}
+      {{.Content}}
+      <div class="icons">
+        {{ with .Site.Params.email }}
+        <a class="icon-link" href="mailto:{{.}}">
+          <i class="fi fi-email"></i>
+        </a>
         {{ end }}
-        {{.Content}}
-        <div class="icons">
-          {{ with .Site.Params.email }}
-          <a class="icon-link" href="mailto:{{.}}">
-            <i class="fi fi-email"></i>
-          </a>
-          {{ end }}
-          {{ with .Site.Params.github }}
-          <a class="icon-link" href="{{.}}">
-            <i class="fi fi-github"></i>
-          </a>
-          {{ end }}
-          {{ with .Site.Params.twitter }}
-          <a class="icon-link" class="icon-link" href="https://twitter.com/{{.}}">
-            <i class="fi fi-twitter"></i>
-          </a>
-          {{ end }}
-          {{ with .Site.Params.linkedin }}
-          <a class="icon-link" href="{{.}}">
-            <i class="fi fi-linkedin"></i>
-          </a>
-          {{ end }}
-        </div>
+        {{ with .Site.Params.github }}
+        <a class="icon-link" href="{{.}}">
+          <i class="fi fi-github"></i>
+        </a>
+        {{ end }}
+        {{ with .Site.Params.twitter }}
+        <a class="icon-link" class="icon-link" href="https://twitter.com/{{.}}">
+          <i class="fi fi-twitter"></i>
+        </a>
+        {{ end }}
+        {{ with .Site.Params.linkedin }}
+        <a class="icon-link" href="{{.}}">
+          <i class="fi fi-linkedin"></i>
+        </a>
+        {{ end }}
       </div>
     </main>
     {{ partial "footer.html" . }}
