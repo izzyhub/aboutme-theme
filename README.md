@@ -27,12 +27,21 @@ For example:
   github = "https://github.com"
   twitter = "twitter_username"
   linkedin = "https://www.linkedin.com"
+  mastadon = "https://mastadon.social/@username"
 ```
+
+Mastadon links use "rel=me" for mastadon verification.
 
 You can also add your location
 ```toml
 [params]
   location = "Roswell, NM"
+```
+
+Change the page title with
+```toml
+[params]
+  title="About Me"
 ```
 
 # Content
@@ -43,3 +52,6 @@ title: "Page title"
 ```
 
 The rest of the file is markdown.
+
+# Credits
+This theme uses [Font Awesome](https://fontawesome.com/) for the SVG icons.

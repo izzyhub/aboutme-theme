@@ -54,7 +54,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  font-size: 2em;
+  font-size: small;
   margin-top: 0.2vh;
 }
 
@@ -66,6 +66,13 @@ a:link {
   color: #7AAA91;
 }
 
+.inline-svg {
+	display: inline-block;
+	height: 2.5rem;
+	width: 2.5rem;
+	top: 0.5rem;
+	position: relative;
+}
 
 .icon-link:link {
   color: #353238;

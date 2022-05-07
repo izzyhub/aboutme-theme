@@ -7,29 +7,36 @@
   <body>
     <main class="content">
       <h1>{{.Title}}</h1>
+
       {{ with .Site.Params.location }}
       <div class="location">{{.}}</div>
       {{ end }}
+
       {{.Content}}
       <div class="icons">
         {{ with .Site.Params.email }}
         <a class="icon-link" href="mailto:{{.}}">
-          <i class="fi fi-email"></i>
+					{{ partial "fontawesome.html" "envelope" }}
         </a>
         {{ end }}
         {{ with .Site.Params.github }}
         <a class="icon-link" href="{{.}}">
-          <i class="fi fi-github"></i>
+					{{ partial "fontawesome.html" "github" }}
         </a>
         {{ end }}
         {{ with .Site.Params.twitter }}
         <a class="icon-link" class="icon-link" href="https://twitter.com/{{.}}">
-          <i class="fi fi-twitter"></i>
+					{{ partial "fontawesome.html" "twitter" }}
         </a>
         {{ end }}
         {{ with .Site.Params.linkedin }}
         <a class="icon-link" href="{{.}}">
-          <i class="fi fi-linkedin"></i>
+					{{ partial "fontawesome.html" "linked-in" }}
+        </a>
+        {{ end }}
+        {{ with .Site.Params.mastodon }}
+        <a rel="me" class="icon-link" href="{{.}}">
+					{{ partial "fontawesome.html" "mastodon" }}
         </a>
         {{ end }}
       </div>
