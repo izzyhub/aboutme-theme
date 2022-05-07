@@ -17,7 +17,10 @@
 <meta name="og:url" content="{{.Site.BaseURL}}">
 <meta name="og:image" itemprop="image primaryImageOfPage" content="{{.Site.Params.primaryImage | default "tn.png" | absURL}}">
 
-<link rel="shortcut icon" href="{{.Site.Params.favicon | default "about.ico" | absURL }}" id="favicon">
+{{ with .Site.Params.favicon }}
+<link rel="shortcut icon" href="{{ . | absURL }}" id="favicon">
+{{ end }}
+
 <link rel="stylesheet" href="{{ "/style.css"}}">
 <link rel="stylesheet" href=" {{ "/fontisto/css/fontisto/fontisto.min.css"  | absURL}}">
 <!-- Icons -->

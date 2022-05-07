@@ -1,7 +1,67 @@
-body {
-  background: #353238;
-  color: #F3F3EE;
+:root {
+    color-scheme: light dark;
+}
 
+@media (prefers-color-scheme: dark) {
+	body {
+		background: #000000;
+		color: #D9E0EE;
+	}
+	h1 {
+		color: #E5B4E2;
+	}
+	.content {
+		background: #1E1E2E;
+		color: #D9E0EE;
+	}
+	.location {
+		color: #F66733;
+	}
+	a:link {
+		color: #96CDFB;
+	}
+	.icon-link:link {
+		color: #F5E0DC;
+	}
+
+	footer {
+		color: #F3F3EE;
+	}
+
+	footer a:visited {
+		color: #C9CBFF;
+	}
+}
+@media (prefers-color-scheme: light) {
+	body {
+		background: #b2f7ef;
+		color: #5E6472;
+	}
+	h1 {
+		color: #ff5d8f;
+	}
+	h2 {
+		color: #ff87ab;
+	}
+	.content {
+		background: #fffbff;
+		color: #5E6472;
+	}
+	.location {
+		color: #F66733;
+	}
+	a:link {
+		color: #8093f1;
+	}
+	a:visited {
+		color: #b388eb;
+	}
+	.icon-link:link {
+		color: #ff5d8f;
+	}
+}
+
+body {
   font-family: Helvetica;
   padding: 0.5vh;
 
@@ -15,39 +75,28 @@ body {
   align-content: center;
 }
 
-main {
-}
-
 h1 {
   text-transform: uppercase;
   font-weight: bold;
-  color: #D3435B;
   margin-top: 1vh;
 }
 
-.content {
-  margin: 30px;
-  padding: 30px;
 
-  background: #F3F3EE;
-  color: #353238;
 
-  border-radius: 30px;
-  max-width: 370px;
-  min-width: 200px;
-}
-
-@media (min-width: 376px) {
+@media (max-width: 400px) {
   .content {
+    margin: 10px;
+    padding: 10px;
+    min-width: 85vw;
   }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 401px) {
   .content {
-    margin: 15px;
-    padding: 15px;
-    min-width: 100px;
-  }
+		margin: 30px;
+		padding: 30px;
+
+		border-radius: 30px;
 }
 
 .icons {
@@ -58,13 +107,6 @@ h1 {
   margin-top: 0.2vh;
 }
 
-.location {
-  color: #F66733;
-}
-
-a:link {
-  color: #7AAA91;
-}
 
 .inline-svg {
 	display: inline-block;
@@ -75,14 +117,8 @@ a:link {
 }
 
 .icon-link:link {
-  color: #353238;
   text-decoration: none;
 }
-
-.icon-link:visited {
-  color: #353238;
-}
-
 
 a {
   transition: all .2s ease-in-out;
@@ -93,18 +129,7 @@ a:hover {
 }
 
 footer {
-  color: #F3F3EE;
-
   align-self: center;
   justify-self: flex-end;
   font-size: small;
-}
-
-
-footer a:visited {
-  color: #8E75AD;
-}
-
-footer a:link {
-  color: #7AAA91;
 }
